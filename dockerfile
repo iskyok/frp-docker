@@ -15,7 +15,7 @@ RUN set -x \
     && apt autoremove -y \
     && rm -rf /var/lib/apt/lists/*
 
-COPY conf/frps.ini /var/frp/conf/frps.ini
+COPY frps.ini /var/frp/conf/frps.ini
 
 VOLUME /var/frp/conf
 
