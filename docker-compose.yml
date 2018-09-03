@@ -18,8 +18,3 @@ services:
 
 volumes:
     frp_conf:
-
-networks:
-  default:
-    external:
-      name: nginx-proxy
