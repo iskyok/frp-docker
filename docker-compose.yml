@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  frp:
+    image: jacksun/frps-docker:latest
+    container_name: frps-docker
+    ports:
+      - "7000:7000"
+      - "7500:7500"
+    expose:
+      - 80
+      - 443
+    volumes:
+      - frp_conf:/var/frp/conf
+    restart: always
+    environment:
+      VIRTUAL_HOST: '*.frp.mallbear.com,frp.mallbear.com'
+
+volumes:
+    frp_conf:
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
