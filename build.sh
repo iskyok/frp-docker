@@ -1,4 +1,4 @@
 #! /bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
-docker build -t="jacksun/frps-docker:latest" .
+docker build -t="jacksun/frps-docker:latest" --no-cache .
