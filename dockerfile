@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER jacksun <345887261@qq.com>
 
-ARG FRP_VERSION=2.1.0
+ARG FRP_VERSION=0.21.0
 
 RUN apt update \
     && apt install -y wget
