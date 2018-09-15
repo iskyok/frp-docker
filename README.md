@@ -27,6 +27,12 @@ docker-compose up -d
  cp nginx_frp.conf /etc/nginx/sites-enabled/frp.conf
  sudo /etc/init.d/nginx restart
 ```
+## 配置域名解析
+```
+A	frp
+A	*.frp
+```
+
 # 客户端安装
 ## mac安装
 ### 拷贝二进制文件
