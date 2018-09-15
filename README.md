@@ -61,6 +61,9 @@ sudo launchctl load  ~/Library/LaunchAgents/com.frpc.plist
 sudo launchctl start com.frpc
 ```
 
+## 测试访问
+名称.frp.域名xxx.com
+
 ## 其他
 ### Docker 批量删除中间镜像缓存
 ```
