@@ -1,5 +1,25 @@
 # frp-docker
 https://github.com/fatedier/frp
+# 服务器端安装
+```
+git clone https://github.com/myjacksun/frp-docker
+```
+
+### 制作自己的frp-docker镜像
+1.修改服务器配置文件（frps.ini）   
+2.执行
+```
+bash build.sh
+```
+ 
+### 启动容器
+1.修改服务器配置文件：docker-compose.yml   
+2.启动命令:  
+```
+docker-compose up -d
+```
+## 测试
+打开浏览器通过 http://[server_addr]:7500 访问 dashboard 界面，用户名密码默认为 xxxx。
 
 # 客户端安装
 ## mac安装
@@ -28,3 +48,10 @@ cp  com.frpc.plist ~/Library/LaunchAgents
 sudo launchctl load  ~/Library/LaunchAgents/com.frpc.plist
 sudo launchctl start com.frpc
 ```
+
+## 其他
+Docker 批量删除中间镜像缓存
+
+docker ps -a | grep "Exited" | awk '{print $1 }'|xargs docker stop
+docker ps -a | grep "Exited" | awk '{print $1 }'|xargs docker rm
+docker images|grep none|awk '{print $3 }'|xargs docker rmi
