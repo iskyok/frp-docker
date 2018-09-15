@@ -18,9 +18,15 @@ bash build.sh
 ```
 docker-compose up -d
 ```
+
 ## 测试
 打开浏览器通过 http://[server_addr]:7500 访问 dashboard 界面，用户名密码默认为 xxxx。
 
+## 配置niginx端口代理
+```
+ cp nginx_frp.conf /etc/nginx/sites-enabled/frp.conf
+ sudo /etc/init.d/nginx restart
+```
 # 客户端安装
 ## mac安装
 ### 拷贝二进制文件
