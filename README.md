@@ -1,6 +1,11 @@
-# frp-docker
+
+##
+由于团队之前用的ngrok经常断网，抽空就换成了七牛团队开发等frp，目前用起来比较稳定。以下是docker版本服务器安装和本地配置方式。
+
+
+## frp-docker
 https://github.com/fatedier/frp
-# 服务器端安装
+## 服务器端安装
 ```
 git clone https://github.com/myjacksun/frp-docker
 ```
