@@ -5,7 +5,7 @@
 
 ## frp-docker
 https://github.com/fatedier/frp
-## 服务器端安装
+# 服务器端安装
 ```
 git clone https://github.com/myjacksun/frp-docker
 ```
