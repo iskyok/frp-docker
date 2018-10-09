@@ -45,8 +45,8 @@ A	*.frp
 wget https://github.com/fatedier/frp/releases/download/v0.21.0/frp_0.21.0_darwin_amd64.tar.gz   
 tar xzvf frp_0.21.0_darwin_amd64.tar.gz
 cd frp_0.21.0_darwin_amd64/
-cp frps /usr/local/bin/
-chmod +x frps
+cp frpc /usr/local/bin/
+chmod +x frpc
 ```
 ### 拷贝配置文件(进入修改域名和端口) 
 ```code
@@ -56,7 +56,7 @@ cp frpc.ini /etc/frpc/frpc.ini
 
 ## 客户端启动
 ```code
-nohub frpc -c /etc/frpc/frpc.ini &
+nohup frpc -c /etc/frpc/frpc.ini &
 ```
 
 ## mac设置开机自启动
