@@ -48,10 +48,17 @@ cd frp_0.21.0_darwin_amd64/
 cp frpc /usr/local/bin/
 chmod +x frpc
 ```
-### 拷贝配置文件(进入修改域名和端口) 
+### 拷贝配置文件
 ```code
 mkdir   /etc/frpc/ 
 cp frpc.ini /etc/frpc/frpc.ini
+```
+进入修改域名和端口
+```
+[web] #不同用户修改不同的服务名称
+type = http
+local_port = 3000 #不同用户映射不同端口
+subdomain = jacksun #不同用户不同二级域名
 ```
 
 ## 客户端启动
