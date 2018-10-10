@@ -11,16 +11,16 @@ git clone https://github.com/myjacksun/frp-docker
 ```
 
 ### 制作自己的frp-docker镜像
-1.修改服务器配置文件frps.ini的subdomain_host
-2.修改docker-compose.yml中的VIRTUAL_HOST
-3.执行
+1. 修改服务器配置文件frps.ini的subdomain_host
+2. 修改docker-compose.yml中的VIRTUAL_HOST
+3. 执行
 ```
 bash build.sh
 ```
  
 ### 启动容器
-1.修改服务器配置文件：docker-compose.yml
-2.启动命令:  
+1. 修改服务器配置文件：docker-compose.yml
+2. 启动命令:
 ```
 docker-compose up -d
 ```
@@ -35,8 +35,8 @@ docker-compose up -d
 ```
 ## 配置域名解析
 ```
-A	frp
-A	*.frp
+A	frp      指向IP地址
+A	*.frp    指向IP地址
 ```
 
 # 客户端安装
