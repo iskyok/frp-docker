@@ -56,7 +56,7 @@ cp frpc.ini /etc/frpc/frpc.ini
 ```
 进入修改域名和端口
 ```
-[web] #不同用户修改不同的服务名称
+[web-jacksun] #不同用户修改不同的服务名称
 type = http
 local_port = 3000 #不同用户映射不同端口
 subdomain = jacksun #不同用户不同二级域名
