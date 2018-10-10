@@ -10,8 +10,8 @@ services:
       - "7080:80/tcp"
       - "7443:443/tcp"
     expose:
-      - 7080
-      - 7443
+      - 80
+      - 443
     volumes:
       - frp_conf:/var/frp/conf
     restart: always
