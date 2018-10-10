@@ -7,16 +7,16 @@ services:
     ports:
       - "7000:7000"
       - "7500:7500"
-      - "8080:80/tcp"
-      - "8443:443/tcp"
+      - "7080:80/tcp"
+      - "7443:443/tcp"
     expose:
-      - 8080
-      - 443
+      - 7080
+      - 7443
     volumes:
       - frp_conf:/var/frp/conf
     restart: always
     environment:
-      VIRTUAL_HOST: '*.frp.mallbear.com,frp.mallbear.com'
+      VIRTUAL_HOST: '*.frp.example.com,frp.example.com'
 
 volumes:
     frp_conf:
