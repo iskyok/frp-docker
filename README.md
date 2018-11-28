@@ -60,6 +60,7 @@ cp frpc.ini /etc/frpc/frpc.ini
 type = http
 local_port = 3000 #不同用户映射不同端口
 subdomain = jacksun #不同用户不同二级域名
+custom_domains = xxx.example.com #可以自定义域名
 ```
 
 ## 客户端启动
